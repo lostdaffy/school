@@ -1,0 +1,452 @@
+:root {
+    --primary: #28a8e3;
+    --color_A: #1bb4b9;
+    --color_B: #ffc107;
+    --color_C: #93c524;
+    --color_D: #28a8e3;
+    --primary-hover: #28a8e3b9;
+    --white: #ffff;
+    --secondary: #777777;
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', cursive;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main {
+    width: 100%;
+}
+
+
+
+
+/* Globle Classes */
+.bg-color_D {
+    background: var(--color_D);
+}
+
+.color_D {
+    color: var(--color_D);
+}
+
+
+
+.bg-pri {
+    background: var(--primary);
+}
+
+.bg-light1 {
+    background-color: #ccc;
+}
+
+/* /Globle Classes */
+/* Navbar */
+.navbar-nav li.nav-item {
+    padding-left: 2rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: var(--primary);
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--primary);
+}
+
+.navbar-brand h2 {
+    color: var(--primary);
+}
+
+
+div.social-icons a {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+div.social-icons a:nth-child(1) {
+    color: var(--color_A);
+}
+
+div.social-icons a:nth-child(2) {
+    color: var(--color_B);
+}
+
+div.social-icons a:nth-child(3) {
+    color: var(--color_C);
+}
+
+div.social-icons a:nth-child(4) {
+    color: var(--color_D);
+}
+
+div.social-icons a:hover {
+    color: var(--primary-hover);
+}
+
+.admission-btn {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+    text-align: center;
+    background: var(--primary);
+    border-radius: 50px;
+    padding: 0.8rem 2rem;
+    transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+}
+
+.admission-btn:hover {
+    background: var(--primary-hover);
+}
+
+
+@media (max-width: 600px) {
+    nav{
+        display:none;
+    }
+}
+
+/* /Navbar */
+
+/* Home Section */
+
+
+section.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section div.landing h2 {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+section div.landing span.text-secondary {
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+/* /Home Section */
+
+/* Heading Component*/
+section.heading {
+    margin: 8rem 0;
+}
+
+div.heading h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+div.heading h2 span {
+    color: var(--primary);
+}
+
+div.heading h2 span:hover {
+    background-color: #ffff;
+}
+
+div.heading .card-border {
+    border: none;
+    box-shadow: #def8ec 0px 8px 24px;
+}
+
+div.heading .card-border span {
+    font-size: 4rem;
+    color: var(--primary);
+}
+
+/* /Heading Component*/
+
+/* Welcome Section */
+
+div.welcome_img img {
+    border-radius: 1rem 6rem;
+}
+
+.view_more_btn {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    text-align: center;
+    background: var(--primary);
+    border-radius: 50px;
+    padding: 0.8rem 2rem;
+    transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+}
+
+/* /Welcome Section */
+
+/* our Team */
+section.our_team div.team_img_1 img {
+    border-radius: 0 0 15rem 0;
+}
+
+section.our_team div.team_img_2 img {
+    border-radius: 15rem 0 0 0;
+}
+
+section.our_team div.our_team_img img {
+    border-radius: 1rem 6rem;
+}
+
+/* /our Team */
+
+
+/* Service */
+section.best_edu div.card img {
+    border-radius: 0rem 4rem;
+}
+
+/* /Service */
+
+/* Classes */
+
+section.classes div.class_img img {
+    border-radius: 1rem 6rem;
+}
+
+/* /Classes */
+
+
+/* Gallery */
+
+section.gallery div.col img {
+    border-radius: 100% 0% 100% 0% / 19% 83% 17% 81%;
+}
+
+/* /Gallery */
+
+
+/* Footer */
+
+.footer-section {
+    background: #151414;
+
+}
+
+.footer-text p {
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #7e7e7e;
+    line-height: 21px;
+}
+
+.footer-widget-heading h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background: var(--color_D);
+}
+
+.footer-widget ul li {
+    display: inline;
+    width: 50%;
+    margin-bottom: 12px;
+    float: left;
+}
+
+.footer-widget ul li a:hover {
+    color: var(--color_D);
+}
+
+.footer-widget ul li a {
+    color: #878787;
+    text-transform: capitalize;
+}
+
+.subscribe-form {
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.subscribe-form input {
+    border: none;
+    width: 100%;
+    padding: 14px 28px;
+    background: #2e2e2e;
+    color: #fff;
+}
+
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: var(--color_D);
+    padding: 13px 20px;
+    border: 1px solid var(--color_D);
+    top: 1px;
+}
+
+.subscribe-form button i {
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(-6deg);
+}
+
+.copyright-area {
+    background: #202020;
+    padding-top: 0.7rem;
+}
+
+.copyright-text p {
+    font-size: 14px;
+    color: #878787;
+}
+
+.footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+    color: var(--color_D);
+}
+
+.footer-menu li a {
+    font-size: 14px;
+    color: #878787;
+}
+
+/* /Footer */
+
+
+
+
+/*  */
+/*  */
+/*  */
+
+/* student_register.html */
+
+
+.stu_reg_btn {
+    background: linear-gradient(90deg, #28a8e3b9 1%, var(--color_D) 100%);
+    color: var(--white);
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 20px 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.stu_reg_btn:hover {
+    background: linear-gradient(90deg, var(--color_D) 1%, #28a8e3b9 100%);
+    color: var(--white);
+    color: var(--white);
+}
+
+
+
+/* /student_register.html */
+
+
+/*  */
+/*  */
+/*  */
+/* contact.html */
+
+section.contact {
+    width: 100%;
+    background-image: url("/images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact_btn {
+    background: linear-gradient(90deg, #28a8e3b9 1%, var(--color_D) 100%);
+    color: var(--white);
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 20px 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.contact_btn:hover {
+    background: linear-gradient(90deg, var(--color_D) 1%, #28a8e3b9 100%);
+    color: var(--white);
+    color: var(--white);
+}
+
+/* /contact.html */
+
+/*  */
+/*  */
+/*  */
+/* about.html */
+
+section.about {
+    width: 100%;
+    background-image: url("/images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+div.who_we_are {
+    margin-top: 5rem;
+    padding: 0 6rem;
+}
+
+/* /about.html */
+
+
+/* faculty.html */
+
+div.social a:nth-child(1) {
+    font-size: 1.3rem;
+    color: var(--color_A);
+}
+
+div.social a:nth-child(2) {
+    font-size: 1.3rem;
+    color: var(--color_B);
+}
+
+div.social a:nth-child(3) {
+    font-size: 1.3rem;
+    color: var(--color_C);
+}
+
+div.social a:nth-child(4) {
+    font-size: 1.3rem;
+    color: var(--color_D);
+}
+
+/* /faculty.html */
