@@ -143,7 +143,7 @@ section.home {
 }
 
 .home>.container>.landing {
-    padding: 0 8rem;
+    padding: 8rem 8rem 0 8rem;
     text-align: center;
 }
 
@@ -159,11 +159,6 @@ section.home {
 }
 
 @media only screen and (max-width: 600px) {
-    section.home {
-        background: linear-gradient(#ffffff36, #28a8e3c3), url(../images/home.jpg);
-        background-size: cover;
-    }
-
     .home>.container>.landing {
         padding: 1rem;
     }
