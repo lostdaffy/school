@@ -421,7 +421,7 @@ section.gallery div.col img {
 
 section.contact {
     width: 100%;
-    background-image: url("/images/banner.jpg");
+    background-image: url("../images/banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -451,7 +451,7 @@ section.contact {
 
 section.about {
     width: 100%;
-    background-image: url("/images/banner.jpg");
+    background-image: url("../images/banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
