@@ -444,7 +444,7 @@ section.contact {
 /*  */
 /* about.html */
 
-section.about {
+.about {
     width: 100%;
     background-image: url("../images/banner.jpg");
     background-size: cover;
@@ -452,10 +452,11 @@ section.about {
 }
 
 
-div.who_we_are {
+.who_we_are {
     margin-top: 5rem;
-    padding: 0 6rem;
 }
+
+
 
 /* /about.html */
 
