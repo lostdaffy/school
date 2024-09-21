@@ -1,1 +1,1 @@
-https://lostdaffy.github.io/school-ui/
+https://lostdaffy.github.io/school/
